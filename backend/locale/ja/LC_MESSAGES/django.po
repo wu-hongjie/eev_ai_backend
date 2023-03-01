@@ -1,0 +1,163 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-02-14 17:08+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: backend/urls.py:25 backend/urls.py:27
+msgid "IT skill evaluation"
+msgstr "ITスキル評価モデル　管理サイト"
+
+#: backend/urls.py:26
+msgid "Management site"
+msgstr "管理画面"
+
+#: itskilleval/admin.py:54
+msgid "Select model to train"
+msgstr "選択された AIモデル の学習"
+
+#: itskilleval/admin.py:60 itskilleval/admin.py:61
+#, python-format
+msgid "%d AI model is training."
+msgstr "%d モデルを学習中"
+
+#: itskilleval/admin.py:90
+msgid "Status"
+msgstr "ステータス"
+
+#: itskilleval/admin.py:92
+#, python-brace-format
+msgid "{value}: {name}"
+msgstr ""
+
+#: itskilleval/enum/train_history/status.py:5
+msgid "Model was not trained"
+msgstr "AIモデルは学習されませんでした"
+
+#: itskilleval/enum/train_history/status.py:6
+msgid "Model was not updated"
+msgstr "AIモデルは更新されませんでした"
+
+#: itskilleval/enum/train_history/status.py:7
+msgid "Model was updated"
+msgstr "AIモデルが更新されました"
+
+#: itskilleval/exception/input_record_error.py:8
+msgid "Invalid input"
+msgstr "不正な入力です"
+
+#: itskilleval/exception/input_record_error.py:9
+msgid "Bad request"
+msgstr "リクエストが正しくありません"
+
+#: itskilleval/models/ai_model.py:23
+msgid "AI model"
+msgstr "AIモデル"
+
+#: itskilleval/models/ai_model.py:24
+msgid "AI models"
+msgstr "AIモデル"
+
+#: itskilleval/models/ai_model_input.py:13
+msgid "input number"
+msgstr "数値"
+
+#: itskilleval/models/ai_model_input.py:14
+msgid "input category"
+msgstr "カテゴリー"
+
+#: itskilleval/models/ai_model_input.py:31
+msgid "AI model input"
+msgstr "AIモデル入力"
+
+#: itskilleval/models/ai_model_input.py:32
+msgid "AI model inputs"
+msgstr "AIモデル入力"
+
+#: itskilleval/models/eval.py:19
+msgid "Eval"
+msgstr "評価結果"
+
+#: itskilleval/models/eval.py:20
+msgid "Evals"
+msgstr "評価結果"
+
+#: itskilleval/models/job.py:20
+msgid "Job"
+msgstr "ジョブ"
+
+#: itskilleval/models/job.py:21
+msgid "Jobs"
+msgstr "ジョブ"
+
+#: itskilleval/models/train_history.py:10
+msgid "no aimodel updated"
+msgstr "モデル更新無し"
+
+#: itskilleval/models/train_history.py:11
+msgid "aimodel updated"
+msgstr "モデル更新有り"
+
+#: itskilleval/models/train_history.py:26
+msgid "Train history"
+msgstr "学習履歴"
+
+#: itskilleval/models/train_history.py:27
+msgid "Train histories"
+msgstr "学習履歴"
+
+#: itskilleval/service/models/base/ai_model_base.py:64
+#: itskilleval/service/models/base/ai_model_base.py:71
+msgid "File not found"
+msgstr "ファイルが見つかりませんでした"
+
+#: itskilleval/service/pre_procession_data.py:30
+msgid "Input length is wrong"
+msgstr "入力の項目数が正しくありません"
+
+#: itskilleval/service/pre_procession_data.py:34
+msgid " was not found"
+msgstr "　の入力項目が設定されていません"
+
+#: itskilleval/service/pre_procession_data.py:38
+msgid "Normalize error"
+msgstr "正規化に失敗しました"
+
+#: itskilleval/validation/eval_search.py:20
+#: itskilleval/validation/eval_search.py:25
+#: itskilleval/validation/eval_store.py:51
+#: itskilleval/validation/eval_store.py:57
+#: itskilleval/validation/eval_store.py:62
+msgid "Ai model not found"
+msgstr "該当するAIモデルが見つかりませんでした"
+
+#: itskilleval/validation/eval_search.py:32
+msgid "Eval model not found"
+msgstr "該当する評価結果が見つかりませんでした"
+
+#: itskilleval/validation/eval_search.py:38
+msgid "To date must great than or equal from date"
+msgstr "終了日には、開始日以降の日付を設定してください"
+
+#: itskilleval/validation/eval_store.py:19
+#: itskilleval/validation/eval_store.py:43
+msgid "Records is invalid"
+msgstr "レコードが無効です"
+
+#: itskilleval/validation/job_search.py:16
+msgid "Job not found"
+msgstr "該当するジョブが見つかりませんでした"

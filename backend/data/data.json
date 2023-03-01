@@ -1,0 +1,100 @@
+[
+    {
+        "model": "itskilleval.AImodel",
+        "pk": "5b1515ac-692a-4541-a9fe-355d46c0207e",
+        "fields": {
+            "name": "test",
+            "output_amount": 1,
+            "updated_by": "44d2c71f-b38f-452e-9ce8-a69539f50099",
+            "created_by": "44d2c71f-b38f-452e-9ce8-a69539f50099",
+            "updated_at": "2022-12-25 23:36:05.000000",
+            "created_at": "2022-12-25 23:43:30.944537"
+        }
+    },
+    {
+        "model": "itskilleval.AImodel",
+        "pk": "f7a41caf-daad-440c-b43c-55d5f56ac9a0",
+        "fields": {
+            "name": "test",
+            "output_amount": 1,
+            "updated_by": "44d2c71f-b38f-452e-9ce8-a69539f50099",
+            "created_by": "44d2c71f-b38f-452e-9ce8-a69539f50099",
+            "updated_at": "2022-12-25 23:36:05.000000",
+            "created_at": "2022-12-25 23:43:30.944537"
+        }
+    },
+    {
+        "model": "itskilleval.Eval",
+        "pk": "c5db3732-c2ad-4de1-97d1-170ba8d1afaa",
+        "fields": {
+            "aimodel": "f7a41caf-daad-440c-b43c-55d5f56ac9a0",
+            "system_id": "123458",
+            "input_value": [
+                {
+                    "id": "123",
+                    "BaseEvlLv1.item1-1": "4",
+                    "BaseEvlLv1.item1-2": "5"
+
+                },
+                {
+                    "id": "124",
+                    "BaseEvlLv1.item1-1": "1",
+                    "BaseEvlLv1.item1-2": "2"
+
+                },
+                {
+                    "id": "125",
+                    "BaseEvlLv1.item1-1": "4",
+                    "BaseEvlLv1.item1-2": "3"
+
+                }
+            ],
+            "result": [
+                {"id": "123", "conf":"98.5", "result":"0.9"},
+                {"id": "124", "conf":"88.2", "result":"0.8"},
+                {"id": "125", "conf":"80.2", "result":"0.5"}
+            ],
+            "updated_by": "44d2c71f-b38f-452e-9ce8-a69539f50099",
+            "created_by": "44d2c71f-b38f-452e-9ce8-a69539f50099",
+            "updated_at": "2022-12-25 23:36:05.000000",
+            "created_at": "2022-12-25 23:43:30.944537"
+        }
+    },
+    {
+        "model": "itskilleval.Eval",
+        "pk": "af10e00b-f6ba-4578-8b31-044cdfab4f99",
+        "fields": {
+            "aimodel": "5b1515ac-692a-4541-a9fe-355d46c0207e",
+            "system_id": "123456",
+            "input_value": [
+                {
+                    "id": "121",
+                    "BaseEvlLv1.item1-1": "4",
+                    "BaseEvlLv1.item1-2": "5"
+
+                },
+                {
+                    "id": "129",
+                    "BaseEvlLv1.item1-1": "1",
+                    "BaseEvlLv1.item1-2": "2"
+
+                },
+                {
+                    "id": "122",
+                    "BaseEvlLv1.item1-1": "4",
+                    "BaseEvlLv1.item1-2": "3"
+
+                }
+            ],
+            "result": [
+                {"id": "121", "conf":"98.5", "result":"0.9"},
+                {"id": "122", "conf":"88.2", "result":"0.8"},
+                {"id": "129", "conf":"80.2", "result":"0.5"}
+            ],
+            "updated_by": "44d2c71f-b38f-452e-9ce8-a69539f50099",
+            "created_by": "44d2c71f-b38f-452e-9ce8-a69539f50099",
+            "updated_at": "2022-12-25 23:36:05.000000",
+            "created_at": "2022-12-25 23:43:30.944537"
+        }
+    }
+]

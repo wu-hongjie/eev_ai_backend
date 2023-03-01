@@ -1,0 +1,68 @@
+version: '3.8'
+
+services:
+  web:
+    container_name: eev_app
+    build:
+      context: .
+      dockerfile: ./docker/app/Dockerfile
+    volumes:
+      - ./backend:/var/www
+      - ./requirements.txt:/var/www/requirements.txt
+      - static_file:/var/www/static
+      - media_file:/var/www/media
+    depends_on:
+      - db
+
+    expose:
+      - 8000
+    networks:
+      - eev-network
+  db:
+    container_name: eev_db
+    build:
+      context: .
+      dockerfile: ./docker/db/Dockerfile
+    environment:
+      MYSQL_DATABASE: eev
+      MYSQL_ROOT_PASSWORD: eev_db
+      MYSQL_USER: eev
+      MYSQL_PASSWORD: eev_db
+      TZ: Asia/Tokyo
+      DEBIAN_FRONTEND: noninteractive
+    ports:
+      - 3308:3306
+    networks:
+      - eev-network
+  server:
+    container_name: eev_server
+    build:
+      context: .
+      dockerfile: ./docker/server/Dockerfile
+    volumes:
+      - ./docker/server/config:/etc/nginx/conf.d
+      - static_file:/var/www/static
+      - media_file:/var/www/media
+    ports:
+      - 8009:80
+    depends_on:
+      - web
+      - db
+    networks:
+      - eev-network
+
+  broker:
+    container_name: eev_rabbitmq
+    image: rabbitmq:3.11
+    ports:
+      - 5672:5672
+      - 15672:15672
+    networks:
+      - eev-network
+
+networks:
+  eev-network:
+    driver: bridge
+volumes:
+  static_file:
+  media_file:
